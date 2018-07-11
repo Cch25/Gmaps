@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/Info"
+        android:icon="@drawable/ic_info"
+        android:orderInCategory="101"
+        android:title="Info"
+        app:showAsAction="always"></item>
+    <item
+        android:id="@+id/recalibrate"
+        android:icon="@drawable/ic_recalibrate"
+        android:orderInCategory="101"
+        android:title="I'm lost"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/maptype"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Map Type">
+        <menu >
+            <group android:id="@+id/groupmaptype"
+                android:checkableBehavior="single">
+                <item android:id="@+id/maptypeNORMAL"
+                    android:title="NORMAL" />
+                <item android:id="@+id/maptypeSATELLITE"
+                    android:title="SATELLITE" />
+                <item android:id="@+id/maptypeTERRAIN"
+                    android:title="TERRAIN" />
+                <item android:id="@+id/maptypeHYBRID"
+                    android:title="HYBRID" />
+                <item android:id="@+id/maptypeNONE"
+                    android:title="NONE" />
+
+            </group>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/navMode"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Navigation mode">
+        <menu >
+            <group android:id="@+id/naviMode"
+                android:checkableBehavior="single">
+                <item android:id="@+id/driving"
+                    android:title="Driving mode" />
+                <item android:id="@+id/walking"
+                    android:title="Walking mode" />
+                <item android:id="@+id/transit"
+                    android:title="Transit mode" />
+                <item android:id="@+id/cycling"
+                    android:title="Cycling mode" />
+            </group>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/about_us"
+        android:orderInCategory="101"
+        android:title="About"
+        android:visible="true" />
+</menu>
